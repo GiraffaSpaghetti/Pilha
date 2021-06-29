@@ -62,7 +62,7 @@ public class Main {
   public void Pares(){
     int cont=0;
     if (Vazia()) {
-      System.out.println("\nPilha contem 0 elementos");
+      System.out.println("\nPilha contem 0 elementos pares");
       return;
     }
     No atual = base;
@@ -71,13 +71,13 @@ public class Main {
       cont++;
       atual = atual.getProx();
     }
-    System.out.println("\nPilha contem "+ cont +" elementos");
+    System.out.println("\nPilha contem "+ cont +" elementos pares");
   }
 
   public void Impares(){
     int cont=0;
     if (Vazia()) {
-      System.out.println("\nPilha contem 0 elementos");
+      System.out.println("\nPilha contem 0 elementos ímpares");
       return;
     }
     No atual = base;
@@ -86,7 +86,7 @@ public class Main {
       atual = atual.getProx();
       cont++;
     }
-    System.out.println("\nPilha contem "+ cont +" elementos");
+    System.out.println("\nPilha contem "+ cont +" elementos ímpares");
   }
 
   public String EscrevePilha() {
